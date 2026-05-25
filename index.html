@@ -441,16 +441,31 @@
   </div>
 
   <p>
-    Created a map of an indoor environment and implemented path planning and navigation for a mobile robot
-    using SLAM Toolbox and the A* algorithm in Gazebo with ROS.
+    Developed a complete ROS 2-based autonomous navigation pipeline for a TurtleBot3 Burger robot
+    in the Gazebo turtlebot3_house environment. The project included indoor environment mapping
+    using SLAM Toolbox, occupancy-grid preprocessing, obstacle inflation, and custom A* path planning
+    on the generated map.
+  </p>
+
+  <p>
+    The navigation system was implemented without relying on the Nav2 planner and controller servers.
+    Instead, the planned path was converted into map-frame waypoints and executed using a custom
+    feedback controller. The system was also extended with laser-based unexpected obstacle detection,
+    map updating, and online replanning, allowing the robot to adapt its trajectory while maintaining
+    collision-free navigation toward the goal.
   </p>
 
   <div class="tag-list">
-    <span class="tag">ROS</span>
+    <span class="tag">ROS 2</span>
     <span class="tag">Gazebo</span>
-    <span class="tag">SLAM</span>
+    <span class="tag">TurtleBot3</span>
+    <span class="tag">SLAM Toolbox</span>
     <span class="tag">A*</span>
-    <span class="tag">Navigation</span>
+    <span class="tag">Occupancy Grid</span>
+    <span class="tag">Path Planning</span>
+    <span class="tag">Waypoint Tracking</span>
+    <span class="tag">Laser Scan</span>
+    <span class="tag">Online Replanning</span>
   </div>
 </div>
         <div class="card project-card">
