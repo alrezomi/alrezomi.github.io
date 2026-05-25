@@ -197,6 +197,24 @@
 }
 
 
+    .project-diagram {
+  margin: 16px 0 18px;
+  border-radius: 14px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  background: #ffffff;
+  box-shadow: 0 8px 22px rgba(15, 23, 42, 0.08);
+}
+
+.project-diagram img {
+  width: 100%;
+  height: 260px;
+  object-fit: contain;
+  display: block;
+  padding: 10px;
+  background: #ffffff;
+}
+
 .project-image-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -511,17 +529,30 @@
   </div>
 
   <p>
-    Developed and solved a nonlinear vehicle optimal control problem for obstacle avoidance, including direct
-    and indirect methods, tracking control, EKF state/parameter estimation, and MPC.
+    Developed a nonlinear vehicle optimal control project for autonomous obstacle avoidance.
+    The work included formulating and solving an optimal control problem using both direct and indirect
+    methods, with the objective of generating feasible trajectories while respecting vehicle dynamics
+    and obstacle constraints.
+  </p>
+
+  <p>
+    The project was extended with tracking control, Extended Kalman Filter-based state and parameter
+    estimation, and Model Predictive Control. This allowed the vehicle to estimate its motion states,
+    follow the planned trajectory, and adapt its control actions in a more realistic autonomous driving scenario.
   </p>
 
   <div class="tag-list">
     <span class="tag">Optimal Control</span>
+    <span class="tag">Obstacle Avoidance</span>
     <span class="tag">MPC</span>
     <span class="tag">EKF</span>
     <span class="tag">Vehicle Dynamics</span>
+    <span class="tag">Trajectory Tracking</span>
+    <span class="tag">Autonomous Driving</span>
   </div>
 </div>
+
+      
       <div class="card project-card">
   <h3>Three-Wheel Omni-Directional Robot Navigation</h3>
 
@@ -536,8 +567,15 @@
   </div>
 
   <p>
-    Bachelor thesis project on path planning and simulation of a three-wheel omni-directional mobile robot
-    using ROS, Gazebo, Python, and the BUG2 algorithm.
+    Bachelor thesis project focused on the path planning and simulation of a three-wheel
+    omni-directional mobile robot. The work involved modeling the robot behavior in ROS and Gazebo,
+    implementing autonomous navigation logic, and evaluating the robot motion in a simulated environment.
+  </p>
+
+  <p>
+    The navigation algorithm was developed using the BUG2 method, enabling the robot to move toward
+    a target position while reacting to obstacles along its path. This project strengthened my practical
+    experience in mobile robotics, ROS-based simulation, path planning, and autonomous robot navigation.
   </p>
 
   <div class="tag-list">
@@ -545,10 +583,11 @@
     <span class="tag">Python</span>
     <span class="tag">Gazebo</span>
     <span class="tag">BUG2</span>
+    <span class="tag">Path Planning</span>
     <span class="tag">Mobile Robots</span>
+    <span class="tag">Omni-Directional Robot</span>
   </div>
 </div>
-
       <div class="card project-card">
   <h3>3D Measurement and Reconstruction Using AprilGrid and Vision-Based Pose Estimation</h3>
 
@@ -588,18 +627,37 @@
 </div>
 
       <div class="card project-card">
-        <h3>Bayesian Optimization for Robot Control</h3>
-        <p>
-          Applied Bayesian optimization methods for robot control, with a focus on PID tuning and performance
-          improvement in control tasks.
-        </p>
-        <div class="tag-list">
-          <span class="tag">Bayesian Optimization</span>
-          <span class="tag">PID Control</span>
-          <span class="tag">Machine Learning</span>
-          <span class="tag">Robotics</span>
-        </div>
-      </div>
+  <h3>Bayesian Optimization for Robot Control</h3>
+
+  <div class="project-diagram">
+    <img 
+      src="bayesian-optimization-control.png" 
+      alt="Bayesian optimization framework for robot control parameter tuning">
+  </div>
+
+  <p>
+    Implemented a Bayesian optimization framework for tuning robot control parameters, with a focus
+    on improving PID controller performance in robotic motion control tasks. The method was used to
+    search for suitable proportional, integral, and derivative gains based on the robot’s tracking behavior.
+  </p>
+
+  <p>
+    The project connected optimization with robot control by evaluating control performance during
+    experiment execution and using the results to iteratively update the controller parameters. This
+    approach reduced manual tuning effort and provided a more systematic way to improve trajectory
+    tracking and control response.
+  </p>
+
+  <div class="tag-list">
+    <span class="tag">Bayesian Optimization</span>
+    <span class="tag">Robot Control</span>
+    <span class="tag">PID Tuning</span>
+    <span class="tag">Trajectory Tracking</span>
+    <span class="tag">Feedback Control</span>
+    <span class="tag">Control Parameters</span>
+    <span class="tag">Machine Learning</span>
+  </div>
+</div>
 
     </div>
   </section>
