@@ -196,6 +196,35 @@
   display: block;
 }
 
+
+.project-image-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  margin: 16px 0 18px;
+}
+
+.project-image-grid img {
+  width: 100%;
+  height: 165px;
+  object-fit: cover;
+  border-radius: 14px;
+  border: 1px solid var(--border);
+  box-shadow: 0 8px 22px rgba(15, 23, 42, 0.08);
+  background: #000;
+}
+
+@media (max-width: 800px) {
+  .project-image-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .project-image-grid img {
+    height: 220px;
+  }
+}
+
+    
     .project-media img {
   width: 100%;
   height: 280px;
@@ -521,17 +550,42 @@
 </div>
 
       <div class="card project-card">
-        <h3>4-DOF Robot Manipulator Trajectory Tracking</h3>
-        <p>
-          Designed and implemented a 4-DOF robot manipulator and performed trajectory tracking as part of an
-          industrial robotics project.
-        </p>
-        <div class="tag-list">
-          <span class="tag">Robot Manipulator</span>
-          <span class="tag">Trajectory Tracking</span>
-          <span class="tag">Industrial Robotics</span>
-        </div>
-      </div>
+  <h3>3D Measurement and Reconstruction Using AprilGrid and Vision-Based Pose Estimation</h3>
+
+  <div class="project-image-grid">
+    <img 
+      src="camera-poses-aprilgrid.jpg" 
+      alt="Camera pose estimation relative to a vertical AprilGrid">
+
+    <img 
+      src="semi-dense-3d-reconstruction.jpg" 
+      alt="Semi-dense 3D reconstruction using optical flow">
+  </div>
+
+  <p>
+    Developed a MATLAB-based computer vision pipeline for 3D measurement and reconstruction.
+    The project started with camera calibration using the MATLAB calibration toolbox, followed by
+    AprilGrid-based detection to estimate the camera position and orientation across video frames.
+  </p>
+
+  <p>
+    Using the estimated camera poses, visual features were processed and matched between frames to
+    support stereoscopy-based reconstruction. The final output included camera trajectory visualization
+    and semi-dense 3D reconstruction of the observed scene.
+  </p>
+
+  <div class="tag-list">
+    <span class="tag">MATLAB</span>
+    <span class="tag">Computer Vision</span>
+    <span class="tag">Camera Calibration</span>
+    <span class="tag">AprilGrid</span>
+    <span class="tag">Pose Estimation</span>
+    <span class="tag">Stereo Vision</span>
+    <span class="tag">Optical Flow</span>
+    <span class="tag">3D Reconstruction</span>
+    <span class="tag">Triangulation</span>
+  </div>
+</div>
 
       <div class="card project-card">
         <h3>Bayesian Optimization for Robot Control</h3>
