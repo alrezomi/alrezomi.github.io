@@ -196,6 +196,13 @@
   display: block;
 }
 
+    .project-media img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  display: block;
+}
+
     .tag {
       display: inline-block;
       background: #e0ecff;
@@ -386,19 +393,40 @@
     <div class="grid">
 
       <div class="card project-card">
-        <h3>Multimodal Anomaly Detection for Robotic Manipulation</h3>
-        <p>
-          Research project focused on failure monitoring in robotic manipulation by combining visual and force-based
-          signals for improved anomaly detection.
-        </p>
-        <div class="tag-list">
-          <span class="tag">Robotic Manipulation</span>
-          <span class="tag">Anomaly Detection</span>
-          <span class="tag">Machine Learning</span>
-          <span class="tag">Multimodal Data</span>
-        </div>
-      </div>
+  <h3>Multimodal Anomaly Detection for Robotic Manipulation</h3>
 
+  <div class="project-media">
+    <img 
+      src="anomaly-detection.jpg" 
+      alt="Robotic manipulation setup for anomaly detection research">
+  </div>
+
+  <p>
+    Ongoing research project focused on anomaly detection and failure monitoring in robotic manipulation tasks.
+    The project investigates how machine learning, Vision-Language Models (VLMs), and Vision-Language-Action
+    (VLA) models can be used to improve the reliability of robotic systems during manipulation.
+  </p>
+
+  <p>
+    The main idea is to fuse time-series sensor data, such as force and robot signals, with visual information
+    extracted through computer vision and vision processing techniques. By combining these multimodal sources,
+    the system aims to detect more subtle and complex manipulation failures that may not be easily identified
+    from a single data modality.
+  </p>
+
+  <div class="tag-list">
+    <span class="tag">Robotic Manipulation</span>
+    <span class="tag">Anomaly Detection</span>
+    <span class="tag">Failure Monitoring</span>
+    <span class="tag">Machine Learning</span>
+    <span class="tag">VLM</span>
+    <span class="tag">VLA</span>
+    <span class="tag">Computer Vision</span>
+    <span class="tag">Vision Processing</span>
+    <span class="tag">Time-Series Data</span>
+    <span class="tag">Multimodal Learning</span>
+  </div>
+</div>
       <div class="card project-card">
   <h3>Autonomous Mobile Robot Navigation with SLAM and A*</h3>
 
