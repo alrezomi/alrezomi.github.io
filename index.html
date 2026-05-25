@@ -179,6 +179,23 @@
       margin-top: 16px;
     }
 
+
+
+    .project-media {
+  margin: 16px 0 18px;
+  border-radius: 14px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  background: #000;
+  box-shadow: 0 8px 22px rgba(15, 23, 42, 0.08);
+}
+
+.project-media iframe {
+  width: 100%;
+  height: 280px;
+  display: block;
+}
+
     .tag {
       display: inline-block;
       background: #e0ecff;
@@ -383,21 +400,31 @@
       </div>
 
       <div class="card project-card">
-        <h3>Autonomous Mobile Robot Navigation with SLAM and A*</h3>
-        <p>
-          Created a map of an indoor environment and implemented path planning and navigation for a mobile robot
-          using SLAM Toolbox and the A* algorithm in Gazebo with ROS.
-        </p>
-        <div class="tag-list">
-          <span class="tag">ROS</span>
-          <span class="tag">Gazebo</span>
-          <span class="tag">SLAM</span>
-          <span class="tag">A*</span>
-          <span class="tag">Navigation</span>
-        </div>
-      </div>
+  <h3>Autonomous Mobile Robot Navigation with SLAM and A*</h3>
 
-      <div class="card project-card">
+  <div class="project-media">
+    <iframe
+      src="https://www.youtube.com/embed/RiVd6zGnyfw"
+      title="Autonomous Mobile Robot Navigation with SLAM and A*"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen>
+    </iframe>
+  </div>
+
+  <p>
+    Created a map of an indoor environment and implemented path planning and navigation for a mobile robot
+    using SLAM Toolbox and the A* algorithm in Gazebo with ROS.
+  </p>
+
+  <div class="tag-list">
+    <span class="tag">ROS</span>
+    <span class="tag">Gazebo</span>
+    <span class="tag">SLAM</span>
+    <span class="tag">A*</span>
+    <span class="tag">Navigation</span>
+  </div>
+</div>
         <h3>Nonlinear Vehicle OCP, EKF, MPC, and Obstacle Avoidance</h3>
         <p>
           Developed and solved a nonlinear vehicle optimal control problem for obstacle avoidance, including direct
